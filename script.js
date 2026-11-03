@@ -1,3 +1,5 @@
+const API_KEY = "rc_live_9a686ff4d92a4e558217cd6dde7b0948";
+
 (function () {
   document.getElementById("ex1_button").addEventListener("click", async () => {
     const content = document.getElementById("ex1_content");
@@ -10,7 +12,7 @@
         `https://api.restcountries.com/countries/v5/capitals/${encodeURIComponent(capital)}`,
         {
           headers: {
-            Authorization: "Bearer rc_live_9a686ff4d92a4e558217cd6dde7b0948",
+            Authorization: `Bearer ${API_KEY}`,
           },
         },
       );
